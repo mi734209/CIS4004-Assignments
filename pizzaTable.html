@@ -19,21 +19,48 @@
     </select>
     
     <h2>Select Sauce</h2>
-    <input type="radio" id="marinara" name="sauce" value="Marinara">
+    <input type="radio" id="marinara" name="sauce" value="Marinara" required>
     <label for="marinara">Marinara</label><br>
     
-    <input type="radio" id="ranch" name="sauce" value="Ranch">
+    <input type="radio" id="ranch" name="sauce" value="Ranch" required>
     <label for="ranch">Ranch</label><br>
     
-    <input type="radio" id="noSauce" name="sauce" value="No Sauce">
-    <label for="noSauce">No Sauce</label><br>
+    <input type="radio" id="noSauce" name="sauce" value="No Sauce" required>
+    <label for="noSauce">No Sauce</label>
+
+    <h2>Select Toppings</h2>
+    <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni">
+    <label for="pepperoni">Pepperoni</label>
+    
+    <input type="checkbox" id="sausage" name="topping" value="Sausage">
+    <label for="sausage">Sausage</label><br>
+
+    <input type="checkbox" id="mushroom" name="topping" value="Mushroom">
+    <label for="mushroom">Mushroom</label>
+
+    <input type="checkbox" id="pineapple" name="topping" value="Pineapple">
+    <label for="pineapple">Pineapple</label><br>
+
+    <input type="checkbox" id="peppers" name="topping" value="Peppers">
+    <label for="peppers">Peppers</label>
+
+    <input type="checkbox" id="onions" name="topping" value="Onions">
+    <label for="onions">Onions</label><br>
+
+    <input type="checkbox" id="chicken" name="topping" value="Chicken">
+    <label for="chicken">Chicken</label>
+
+    <h2><label for="addInstruct">Additional Instrucions</label></h2>
+
+    <textarea id="addInstruct" name="addInstruct" rows="4" col="50">Add Instructions (Optional)</textarea>
+    <br>
+    <input type="submit" value="Submit">
+    
+    
     
     
   </form>
   
   
 </body>
-
-
-
 </html>
