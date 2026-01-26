@@ -1,5 +1,7 @@
 # CIS4004-Assignments
 Assignments I did for CIS4004
 
-<a href="pizzaTable.html">1. Tables and Forms</a><br>
-<a href="resume.html">2. Resume</a><br>
+<ol>
+  <li><a href="pizzaTable.html">Tables and Forms</a></li>
+  <li><a href="resume.html">Resume</a></li>
+</ol>
