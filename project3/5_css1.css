@@ -1,0 +1,65 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 300%;
+}
+
+h2{
+    color: black;
+    font-size: 250%;
+}
+
+p{
+    color: black;
+}
+
+#paragraph2{
+    border-style: solid;
+    border-color: green;
+    line-height: 2.0;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+
+}
+
+.blue{
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+}
+
+ol li::marker{
+    font-size: 20px;
+}
+
+a[href="http://www.w3schools.com"]{
+    color: darkred;
+}
+
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: lightgrey;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+
+
+td{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+
+}
