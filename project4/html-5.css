@@ -1,0 +1,90 @@
+body {
+    display: flex;         
+    min-height: 100vh;     
+    margin: 0;              
+    font-family: sans-serif; 
+}
+
+#jumpMenu {
+    width: 150px;          
+    background-color: #DAA520;
+    flex-shrink: 0;        
+    padding: 20px;
+    
+   
+    text-align: center;     
+}
+
+#jumpMenu a {
+    display: block;        
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: blue;            
+}
+
+
+main {
+    flex-grow: 1;           
+    background-color: white; 
+    
+}
+
+header{
+    background-color: red;
+    padding-top: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header p{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+
+}
+
+header nav{
+    background-color: black;
+    align-items: center;
+    text-align: center;
+
+}
+header nav button{
+    background-color: blue;
+    font-size: 25px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 20px;
+    width: 300px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 150px;
+}
+article{
+    text-align: left;
+}
+#thanks{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    background-color: skyblue;
+    padding: 25px;
+    margin: 0;
+    z-index: 100;
+    font-size: 2.5em;
+    border: 1px solid black;
+}
