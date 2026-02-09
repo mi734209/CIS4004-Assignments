@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;          
+    min-height: 100vh;
+}
+
+#menuItems {
+    width: 200px;           
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;        
+}
+
+#menuItems button {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid white; 
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+#menuItems button:hover {
+    background-color: #0000aa; 
+}
+
+#jumpMenu {
+    display: none;          
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #DAA520; 
+    width: 100%;
+}
+
+#recentArticles:hover + #jumpMenu, 
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li a {
+    display: block;
+    text-decoration: none;
+    color: blue;           
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#jumpMenu li a:hover {
+    background-color: white;
+    color: #DAA520;
+}
+
+main {
+    flex-grow: 1;          
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header {
+    background-color: red;  
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    font-size: 3em;        
+    margin: 0;
+    font-family: serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    padding: 20px;
+}
+
+article {
+    color: #bbb; 
+    transition: all 2s ease; 
+}
+
+article h2 {
+    color: #bbb;            
+    transition: color 2s ease;
+}
+
+article:hover {
+    color: black;          
+    transform: scale(1.05); 
+}
+
+article:hover h2 {
+    color: black;
+}
+
+
+article > p:first-of-type::first-letter {
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+    float: left;
+    line-height: 0.8;
+    margin-right: 5px;
+}
+
+a {
+    color: blue;
+}
+
+a[href="http://www.google.com"]::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url("arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+}
+
+
+#thanks {
+    text-align: center;
+    margin: 20px;
+}
+
+#thanks a {
+    background-color: #add8e6; 
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 20px;
+    display: inline-block;
+    font-family: serif;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
