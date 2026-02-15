@@ -1,0 +1,158 @@
+:root {
+--bg-color: #1a1b26;         
+  --paper-color: #24283b;     
+  --primary-text: #a9b1d6;     
+  --accent-color: #7aa2f7;     
+  --pill-bg: #414868;          
+  --pill-text: #c0caf5;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  line-height: 1.6;
+  padding: 15px; 
+}
+
+
+.resume-container {
+  background-color: var(--paper-color);
+  max-width: 1200px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+
+.resume-header {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.resume-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.resume-header a {
+  color: white;
+  font-weight: bold;
+}
+
+.objective {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.resume-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+
+.job, .edu-item {
+  margin-bottom: 20px;
+}
+
+.job-header h4, .edu-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.date, .degree {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: var(--pill-bg);
+  color: var(--pill-text);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid #c8d2d6;
+}
+
+
+.project-list {
+  padding-left: 20px;
+}
+
+.project-list a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  
+  body {
+    padding: 40px; 
+  }
+
+
+  .resume-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px; 
+    padding: 40px;
+  }
+  
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
