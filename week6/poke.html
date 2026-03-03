@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Team Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="pokeStyle.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="pokedex-header">
+            <div class="camera-lens"></div>
+            <div class="red-light"></div>
+            <div class="yellow-light"></div>
+            <div class="green-light"></div>
+        </div>
+
+        <h1>Pokemon Team Builder</h1>
+
+        <div id="search-section">
+            <input type="text" id="poke-input" placeholder="Name/ID...">
+            <button id="search-btn">SCAN</button>
+            <div id="error-msg" class="error"></div>
+        </div>
+
+        <div id="current-pokemon-display">
+            <h2 id="poke-name"></h2>
+            
+            <div class="screen-content">
+                <img id="poke-image" class="poke-img" src="" alt="">
+            </div>
+
+            <div class="audio-controls">
+                <label>🔊 Cry:</label>
+                <audio id="poke-audio" controls src=""></audio>
+            </div>
+
+            <h3>Select Moves</h3>
+            <div class="moves-container">
+                <select id="move-1"></select>
+                <select id="move-2"></select>
+                <select id="move-3"></select>
+                <select id="move-4"></select>
+            </div>
+
+            <button id="add-team-btn">ADD TO PARTY</button>
+        </div>
+    </div>
+
+    <div class="pc-box">
+        <h2>My Team</h2>
+        <div id="team-container">
+            </div>
+    </div>
+
+    <script src="pokeScript.js"></script>
+</body>
+</html>
